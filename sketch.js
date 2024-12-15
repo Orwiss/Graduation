@@ -9,7 +9,7 @@ function setup() {
   createCanvas(3200 / 2, 1600 / 2)
   imageMode(CENTER)
   noLoop()
-  randomSeed(0)
+  randomSeed(getUrlParameter('id'))
 
   cols = width / cellSize
   rows = height / cellSize
@@ -19,7 +19,7 @@ function setup() {
     for (let j = 0; j < rows; j++) grid[i][j] = false
   }
   
-  for (let i = 0; i < 10; i++) fillGrid()
+  for (let i = 0; i < 12; i++) fillGrid()
 }
 
 function draw() {
@@ -75,4 +75,9 @@ function drawBlocks() {
       }
     }
   }
+}
+
+function getUrlParameter(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
 }
