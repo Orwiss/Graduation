@@ -19,7 +19,7 @@ function setup() {
     for (let j = 0; j < rows; j++) grid[i][j] = false
   }
   
-  for (let i = 0; i < 12; i++) fillGrid()
+  for (let i = 0; i < 18; i++) fillGrid()
 }
 
 function draw() {
