@@ -6,7 +6,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(3200 / 4, 1600 / 4)
+  createCanvas(3200 / 2, 1600 / 2)
   imageMode(CENTER)
   noLoop()
   randomSeed(0)
